@@ -35,6 +35,7 @@ nav{
 	flex: 1;
 	text-align: right;
 }
+
 nav ul li{
 	list-style: none;
 	display: inline-block;
@@ -43,6 +44,7 @@ nav ul li{
 	color: #a39f9f;
 	font-size: 13px;
 }
+
 nav ul a{
 	text-decoration: none;
 	color: #f8f2f2;
@@ -302,13 +304,24 @@ nav .menubar i {
 
 nav {
     height: 80px;
-    background-image: url("sample_image.jpg");  /*   <--  add an image  */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 50px 0px 80px;
 }
 
+.home nav {
+	flex-direction: row-reverse;
+}
+
+@media (max-width: 1370px) {
+
+	.home nav ul {
+		position: fixed;
+		top: 120px;
+	}
+	
+}
 nav .logo {
     display: flex;
     align-items: center;
@@ -333,7 +346,7 @@ nav ul {
 
 nav ul li {
     margin: 0px 5px;
-    padding: 10px 100px;
+    padding: 0px 30%;
 }
 
 nav ul li a {
